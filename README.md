@@ -1,6 +1,6 @@
 # Quantum Traffic Gridlock — QUBO + QAOA
 
-IBM Qiskit Fall Fest 2026 · QC@IITI · [Team name]
+IBM Qiskit Fall Fest 2026 · QC@IITI · Q-knight (Parag Vijay Pawar)
 
 ## Run
 
@@ -59,4 +59,4 @@ Lift ranges 0.835–0.872 across seeds 0–4 (mean 0.857); enrichment 15.3–16.
 
 ## Report and AI use
 
-The 3-page technical report and the AI-use disclosure are in the team's Google Drive folder: [link].
+The 3-page technical report and the AI-use disclosure are in the team's Google Drive folder: https://drive.google.com/drive/folders/1j56_9tw90O9lJvf2DVsiwCj4XSub0y3K?usp=sharing.
