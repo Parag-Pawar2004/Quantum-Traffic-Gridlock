@@ -1,0 +1,250 @@
+{
+  "scenario": "R",
+  "method": "walsh2",
+  "energy_convention": "E(x) = offset + sum_i Q[i][i] x_i + sum_{i<j} Q[i][j] x_i x_j, x_i in {0,1}",
+  "Q": [
+    [
+      -48.375,
+      19.5,
+      13.0,
+      8.0,
+      -4.5,
+      -15.5,
+      -5.5,
+      -1.5
+    ],
+    [
+      0.0,
+      -71.875,
+      24.0,
+      12.0,
+      -2.5,
+      -5.5,
+      -5.5,
+      -1.5
+    ],
+    [
+      0.0,
+      0.0,
+      -59.625,
+      11.5,
+      -0.5,
+      -1.5,
+      -1.5,
+      -1.5
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      -30.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -23.875,
+      28.5,
+      19.5,
+      8.5
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -8.125,
+      40.0,
+      14.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -13.125,
+      13.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -5.125
+    ]
+  ],
+  "offset": 240.1875,
+  "ising": {
+    "convention": "E(s) = const + sum_i h_i s_i + sum_{i<j} J_ij s_i s_j, s_i = 1 - 2 x_i = <Z_qubit(i)>",
+    "h": [
+      20.8125,
+      25.8125,
+      18.9375,
+      7.125,
+      -0.3125,
+      -10.9375,
+      -8.4375,
+      -5.1875
+    ],
+    "J": [
+      [
+        0.0,
+        4.875,
+        3.25,
+        2.0,
+        -1.125,
+        -3.875,
+        -1.375,
+        -0.375
+      ],
+      [
+        0.0,
+        0.0,
+        6.0,
+        3.0,
+        -0.625,
+        -1.375,
+        -1.375,
+        -0.375
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        2.875,
+        -0.125,
+        -0.375,
+        -0.375,
+        -0.375
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        7.125,
+        4.875,
+        2.125
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        10.0,
+        3.5
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        3.25
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "const": 151.25
+  },
+  "circuit_normalisation": {
+    "divide_h_J_by": 45.20158839852865,
+    "note": "constant dropped (global phase)"
+  },
+  "variables": [
+    {
+      "index": 0,
+      "name": "A1",
+      "qubit": 7,
+      "schedule_bit": 0,
+      "auxiliary": false
+    },
+    {
+      "index": 1,
+      "name": "A2",
+      "qubit": 6,
+      "schedule_bit": 1,
+      "auxiliary": false
+    },
+    {
+      "index": 2,
+      "name": "A3",
+      "qubit": 5,
+      "schedule_bit": 2,
+      "auxiliary": false
+    },
+    {
+      "index": 3,
+      "name": "A4",
+      "qubit": 4,
+      "schedule_bit": 3,
+      "auxiliary": false
+    },
+    {
+      "index": 4,
+      "name": "B1",
+      "qubit": 3,
+      "schedule_bit": 4,
+      "auxiliary": false
+    },
+    {
+      "index": 5,
+      "name": "B2",
+      "qubit": 2,
+      "schedule_bit": 5,
+      "auxiliary": false
+    },
+    {
+      "index": 6,
+      "name": "B3",
+      "qubit": 1,
+      "schedule_bit": 6,
+      "auxiliary": false
+    },
+    {
+      "index": 7,
+      "name": "B4",
+      "qubit": 0,
+      "schedule_bit": 7,
+      "auxiliary": false
+    }
+  ],
+  "auxiliary_variables": [],
+  "num_qubits": 8,
+  "bit_order": "A1 A2 A3 A4 B1 B2 B3 B4 (left to right); 1 = NS green, 0 = EW green",
+  "qiskit_key_mapping": "counts key (q7..q0) == schedule string A1..B4"
+}
