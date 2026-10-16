@@ -29,6 +29,7 @@ Bit order: A slots 1–4 then B slots 1–4; 1 = NS green, 0 = EW green.
 - `run.py` — required CLI
 - `quantum_traffic_gridlock.ipynb` — full analysis with outputs: scorer check, baselines, 5-seed robustness, ablations, generalisation
 - `scorer.py`, `scenarios/scenario_R.json` — official files from the organisers, unmodified
+- `scenarios/scenario_H.json` — shared evaluation scenario, added by the team once released
 
 ## Results on R (seeds 0–4)
 
@@ -41,6 +42,20 @@ See the report for baselines and ablations.
 
 Place the released file at `scenarios/scenario_H.json` and run `./make_outputs.sh`
 (writes `outputs/H/`). The notebook processes every JSON in `scenarios/` unchanged.
+
+Results on H (seeds 0–4, same code and settings as R):
+
+| Quantity | Value |
+| --- | --- |
+| Exact optimum C* / schedule | 234.0 / 10000111 |
+| Uniform-random mean C_rand | 300.28 |
+| QUBO minimiser cost (regret) | 236.0 (regret 0.85 %), schedule 10010110 |
+| Best alternating / greedy cost | 261.0 / 244.0 |
+| Raw QAOA E_Q (seed 0) | 243.85 |
+| Worst-seed lift / mean enrichment | 0.835 / 16.20 |
+| Lowest-energy raw sample / HYBRID | 10010110 (cost 236.0) / 10000111 (cost 234.0) |
+
+Lift ranges 0.835–0.872 across seeds 0–4 (mean 0.857); enrichment 15.3–16.8.
 
 ## Report and AI use
 
