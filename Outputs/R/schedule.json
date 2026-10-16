@@ -1,0 +1,63 @@
+{
+  "bit_order": "A1 A2 A3 A4 B1 B2 B3 B4 (left to right); 1 = NS green, 0 = EW green",
+  "raw_qaoa": {
+    "most_frequent_sample": {
+      "bits": "11111010",
+      "official_cost": 79.5
+    },
+    "lowest_surrogate_energy_sample": {
+      "bits": "11101010",
+      "official_cost": 72.0
+    }
+  },
+  "qubo_exact_minimiser": {
+    "bits": "11101010",
+    "official_cost": 72.0
+  },
+  "seed": 0,
+  "p": 4,
+  "training_evaluations": 300,
+  "gammas": [
+    -0.036525228771856155,
+    0.6780588777190117,
+    1.4276806527418162,
+    2.314678112756586
+  ],
+  "betas": [
+    -1.3700570430158028,
+    -0.6610577250850974,
+    -0.3687098409811209,
+    -0.1942904458620023
+  ],
+  "consistency_max_abs_prob_diff": 1.8041124150158794e-16,
+  "selected_schedule": {
+    "bits": "11101010",
+    "A": [
+      1,
+      1,
+      1,
+      0
+    ],
+    "B": [
+      1,
+      0,
+      1,
+      0
+    ],
+    "source": "raw QAOA: among the 4096 sampled bitstrings, the one with the lowest surrogate (QUBO) energy - no official-scorer calls, no local search"
+  },
+  "hybrid_HYBRID_NOT_RAW_QAOA": {
+    "schedule": "11101010",
+    "cost": 72.0,
+    "official_evaluations": 320
+  },
+  "diagnostics_benchmark_only": {
+    "E_Q": 89.888916015625,
+    "C_star": 72.0,
+    "C_rand": 151.25,
+    "lift": 0.774272353115142,
+    "elite_fraction": 0.581298828125,
+    "enrichment": 11.447115384615385,
+    "best_sampled_cost": 72.0
+  }
+}
