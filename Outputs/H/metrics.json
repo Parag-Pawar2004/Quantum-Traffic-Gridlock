@@ -1,0 +1,30 @@
+{
+  "scenario": "H",
+  "seed": 0,
+  "p": 4,
+  "qubits": 8,
+  "training_evaluations": 300,
+  "circuit_depth": 118,
+  "ops": {
+    "cx": 192,
+    "rz": 128,
+    "rx": 32,
+    "h": 8,
+    "measure": 8,
+    "barrier": 1
+  },
+  "runtime_s": 1.39,
+  "most_frequent_sample": "10010111",
+  "E_Q": 243.851318359375,
+  "C_star": 234.0,
+  "C_rand": 300.28125,
+  "lift": 0.851370962989156,
+  "elite_fraction": 0.814208984375,
+  "enrichment": 16.033653846153847,
+  "best_sampled_cost": 234.0,
+  "hybrid_HYBRID_NOT_RAW_QAOA": {
+    "schedule": "10000111",
+    "cost": 234.0,
+    "official_evaluations": 408
+  }
+}
